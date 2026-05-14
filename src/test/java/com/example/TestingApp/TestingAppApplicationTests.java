@@ -20,7 +20,8 @@ class TestingAppApplicationTests {
         int a = 5;
         int b = 41;
         int result = addTwoNumbers(a, b);
-        Assertions.assertEquals(result, 8);
+        Assertions.assertEquals(result, 46);
+//        Assertions.assertThat()
     }
 
     @Test
