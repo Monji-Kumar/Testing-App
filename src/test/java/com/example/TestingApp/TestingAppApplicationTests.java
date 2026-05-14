@@ -1,6 +1,8 @@
 package com.example.TestingApp;
 
 import lombok.extern.slf4j.Slf4j;
+import org.assertj.core.api.Assertions;
+import org.assertj.core.data.Offset;
 import org.junit.jupiter.api.*;
 import org.springframework.boot.test.context.SpringBootTest;
 
@@ -20,8 +22,11 @@ class TestingAppApplicationTests {
         int a = 5;
         int b = 41;
         int result = addTwoNumbers(a, b);
-        Assertions.assertEquals(result, 46);
-//        Assertions.assertThat()
+//        JUnit Assertions
+//        Assertions.assertEquals(result, 46);
+
+//        Assert J Assertions
+        Assertions.assertThat(result).isEqualTo(45).isCloseTo(40, Offset.offset(6));
     }
 
     @Test
