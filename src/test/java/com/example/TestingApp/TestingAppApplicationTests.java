@@ -17,6 +17,11 @@ class TestingAppApplicationTests {
     @DisplayName("Display Test 2")
     void test2() {
         log.info("Display Test 2");
+        int a = 5;
+        int b = 41;
+        int result = addTwoNumbers(a, b);
+        Assertions.assertEquals(result, 46);
+//        Assertions.assertThat()
     }
 
     @Test
@@ -38,5 +43,9 @@ class TestingAppApplicationTests {
     @AfterAll
     static void contextEnds(){
         log.info("Asoviva Ovari Da");
+    }
+
+    Integer addTwoNumbers(int a, int b) {
+        return a + b;
     }
 }
