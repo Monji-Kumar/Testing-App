@@ -6,8 +6,6 @@ import com.example.TestingApp.entities.Employee;
 import com.example.TestingApp.exceptions.ResourceNotFoundException;
 import com.example.TestingApp.repositories.EmployeeRepository;
 import com.example.TestingApp.services.EmployeeService;
-import com.example.TestingApp.repositories.EmployeeRepository;
-import com.example.TestingApp.services.EmployeeService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.modelmapper.ModelMapper;
