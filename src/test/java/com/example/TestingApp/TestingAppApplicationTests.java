@@ -26,7 +26,7 @@ class TestingAppApplicationTests {
 //        Assertions.assertEquals(result, 46);
 
 //        Assert J Assertions
-        Assertions.assertThat(result).isEqualTo(45).isCloseTo(40, Offset.offset(6));
+        Assertions.assertThat(result).isEqualTo(46).isCloseTo(40, Offset.offset(6));
     }
 
     @Test
